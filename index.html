@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+
+        <meta name="description" content="Project website for RoboFuME">
+        <meta name="author" content="Jingyun Yang">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="icons/banana_icon.png">
+
+        <title>RoboFuME</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+        a {
+            color: #B1040E;
+        }
+
+        a:hover {
+            color: #820000;
+            text-decoration: underline;
+        }
+
+        .body_text {
+            color: rgb(46,45,41);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.9rem;
+            font-size: 1.1rem;
+        }
+
+        .text_title {
+            color: rgb(46,45,41);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            line-height: 3rem;
+            font-size: 2.2rem;
+        }
+
+        .text_venue {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            line-height: 2.0rem;
+            font-size: 1.5rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_author {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.5rem;
+            font-size: 1.1rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_resource {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.5rem;
+            font-size: 1.0rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_header {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 2.5rem;
+            font-size: 2.0rem;
+            margin-top: 0.4rem;
+            color: rgb(140, 21, 21);
+        }
+
+        .figure_caption {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8rem;
+            font-size: 1.2rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_reference {
+            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+            font-size: 0.7em;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_ack {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            font-size: 0.7em;
+            color: rgb(140, 21, 21);
+        }
+
+        .teaser_grid {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            grid-auto-flow: row;
+        }
+
+        .teaser_fig {
+            max-width: 99%;
+        }
+
+        .icons {
+            height: 3.5em;
+        }
+
+
+        .big_figure {
+            max-width: 100%;
+            display: block;
+            margin: 1em auto 1em;
+        }
+
+        .median_figure {
+            max-width: 75%;
+            display: block;
+            margin: 1em auto 1em;
+        }
+
+        .color_switch {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .teaser_item {
+            text-align: center;
+        }
+
+        .table_title {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: rgb(77, 79, 83);
+            text-align: center;
+        }
+
+        .table_head {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: rgb(77, 79, 83);
+            text-align: center;
+        }
+
+        .table_elem {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 1.0rem;
+            color: rgb(77, 79, 83);
+            text-align: center;
+            align-self: center;
+        }
+
+        .table_emph {
+            font-weight: 700;
+        }
+
+    </style>
+
+    <body>
+    <section>
+    <div class="container">
+        <div class="row" id="title">
+            <p class="col text-center mt-4 text_title">
+                Robot Fine-Tuning Made Easy: Pre-Training Rewards and Policies for Autonomous Real-World Reinforcement Learning
+            </p>
+        </div>
+
+        <div class="row" id="venue">
+            <p class="col text-center text_venue">   
+            </p>
+        </div>
+
+        
+        <div class="row" id="authors">
+            <div class="col-md-12 text-center mt-2 text_author">
+                <ul class="list-inline">
+                    <li class="list-inline-item mx-4">
+                        <a href=https://yjy0625.github.io/>
+                            <p>Jingyun Yang<sup>&#127794</sup>*</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href=https://profiles.stanford.edu/joel-sobol-mark/>
+                            <p>Max Sobol Mark<sup>&#127794</sup>*</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href=https://profiles.stanford.edu/240111/>
+                            <p>Brandon Vu<sup>&#127794</sup></p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href=ub.io/>
+                            <p>Archit Sharma<sup>&#127794</sup></p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href=https://web.stanford.edu/~bohg/>
+                            <p>Jeannette Bohg<sup>&#127794</sup></p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href=https://ai.stanford.edu/~cbfinn/>
+                            <p>Chelsea Finn<sup>&#127794</sup></p>
+                        </a>
+                    </li>
+                    <br>
+                    (*equal contribution)
+                </ul>
+                <ul class="list-inline" style="margin-top: 1rem">
+                    <li class="list-inline-item mx-4">
+                        <p><sup>&#127794</sup>Stanford University</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="row" id="resources">
+            <div class="col text-center text_resource">
+                <ul class="list-inline">
+                    <li class="list-inline-item mx-4">
+                        <a href="https://robofume.github.io">
+                            <img src="icons/paper_icon.png" class="icons">
+                            <p>Paper</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                            <a href="https://robofume.github.io">
+                            <img src="icons/youtube_icon.png" class="icons">
+                                <p>Video</p>
+                            </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="">
+                            <img src="icons/github_icon.png" class="icons">
+                            <p>Code (to appear)</p>
+                        </a>
+                    </li>
+                    <li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="color_switch">
+        <div class="container">
+        <div class="row" id="abstract">
+            <div class="col my-3">
+                <img src="images/teaser.png" class="teaser_fig">
+                <br><br>
+
+                <p class="text_header">
+                    Abstract
+                </p>
+
+                <p class="body_text">
+                    The pre-train and fine-tune paradigm in machine learning has had dramatic success in a wide range of domains because the use of existing data or pre-trained models on the Internet enables quick and easy learning of new tasks. We aim to enable this paradigm in robotic reinforcement learning, allowing a robot to learn a new task with little human effort by leveraging data and models from the Internet. However, reinforcement learning often requires significant human effort in the form of manual reward specification or environment resets, even if the policy is pre-trained. We introduce RoboFuME, a reset-free fine-tuning system that pre-trains a multi-task manipulation policy from diverse datasets of prior experiences and self-improves online to learn a target task with minimal human intervention. Our insights are to utilize calibrated offline reinforcement learning techniques to ensure efficient online fine-tuning of a pre-trained policy in the presence of distribution shifts and leverage pre-trained vision language models (VLMs) to build a robust reward classifier for autonomously providing reward signals during the online fine-tuning process. In a diverse set of five real robot manipulation tasks, we show that our method can incorporate data from an existing robot dataset collected at a different institution and improve on a target task within as little as 3 hours of autonomous real-world experience. We also demonstrate in simulation experiments that our method outperforms prior works that use different RL algorithms or different approaches for predicting rewards.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col my-3">
+                <p class="text_header">
+                    Video
+                </p>
+                <div class="text-center mb-4">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/vQL8YK2nYQQ?si=fkTOXL4yKbMBsFK7" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="color_switch">
+        <div class="container">
+        <div class="row" id="abstract">
+            <div class="col my-3">
+                <p class="text_header">
+                    Method Overview
+                </p>
+                
+                <p class="body_text">
+                    We propose a system that enables autonomous and efficient real-world robot learning by first pre-training a VLM reward model and a multi-task policy from diverse off-the-shelf demonstration datasets and then fine-tuning the pre-trained policy online with the VLM reward model.
+                </p>
+                <img src="images/teaser.png" class="teaser_fig">
+                <br><br>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <div class="row" id="ack" style="margin-top: 1rem">
+            <p class="col text_ack my-3">
+                If you have any questions, please contact Jingyun Yang (jingyuny@stanford.edu).
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </body>
+</html>
