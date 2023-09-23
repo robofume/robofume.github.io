@@ -283,7 +283,7 @@
                 </p>
                 <div class="text-center mb-4">
                     <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://www.youtube.com/embed/vQL8YK2nYQQ?si=fkTOXL4yKbMBsFK7" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                        <iframe src="https://www.youtube.com/embed/BnFPav1viBA?si=TTpjCk-XvOGJhixU" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                     </div>
                 </div>
             </div>
@@ -303,6 +303,42 @@
                     We propose a system that enables autonomous and efficient real-world robot learning by first pre-training a VLM reward model and a multi-task policy from diverse off-the-shelf demonstration datasets and then fine-tuning the pre-trained policy online with the VLM reward model.
                 </p>
                 <img src="images/teaser.png" class="teaser_fig">
+                <br><br>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="color_switch">
+        <div class="container">
+        <div class="row" id="abstract">
+            <div class="col my-3">
+                <p class="text_header">
+                    Real Robot Experiments
+                </p>
+                
+                <p class="body_text">
+                    We evaluate our agent on five manipulation tasks. Our method significantly improves over both offline-only and BC performance after 30k steps of online interaction (2-4 hours).
+                </p>
+                <img src="images/tasks.png" class="teaser_fig">
+                <img src="images/real_robot_results.png" class="teaser_fig">
+                <br><br>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="color_switch">
+        <div class="container">
+        <div class="row" id="abstract">
+            <div class="col my-3">
+                <p class="text_header">
+                    Simulation Experiment Results
+                </p>
+                
+                <p class="body_text">
+                    We use a suite of three simulated robotic manipulation environments to ablate contributions of different components of our algorithm. We report the success rate over the course of training, averaged over three seeds. Our method RoboFuME outperforms BC, ARIEL+VLM, and MEDAL++ consistently on all three domains.
+                </p>
+                <img src="images/sim_envs.gif" class="teaser_fig">
+                <img src="images/sim_results.png" class="teaser_fig">
                 <br><br>
             </div>
         </div>
