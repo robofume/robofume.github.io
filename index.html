@@ -1,358 +1,161 @@
 <!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8">
 
+    <meta name="description" content="Project website for RoboFuME">
+    <meta name="author" content="Jingyun Yang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons/robot_icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8G9PY3DPRC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        <meta name="description" content="Project website for RoboFuME">
-        <meta name="author" content="Jingyun Yang">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      gtag('config', 'G-8G9PY3DPRC');
+    </script>
+    <title>RoboFuME</title>
+  </head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="icon" href="icons/robot_icon.png">
+  <style>
+    .grad_text {
+      background: -webkit-linear-gradient(right, rgba(44,83,131,1), rgba(95,175,201,1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 
-        <title>RoboFuME</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <style>
-        a {
-            color: #B1040E;
-        }
-
-        a:hover {
-            color: #820000;
-            text-decoration: underline;
-        }
-
-        .body_text {
-            color: rgb(46,45,41);
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            line-height: 1.9rem;
-            font-size: 1.1rem;
-        }
-
-        .text_title {
-            color: rgb(46,45,41);
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 500;
-            line-height: 3rem;
-            font-size: 2.2rem;
-        }
-
-        .text_venue {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 500;
-            line-height: 2.0rem;
-            font-size: 1.5rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_author {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.5rem;
-            font-size: 1.1rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_resource {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.5rem;
-            font-size: 1.0rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_header {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 2.5rem;
-            font-size: 2.0rem;
-            margin-top: 0.4rem;
-            color: rgb(140, 21, 21);
-        }
-
-        .figure_caption {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            line-height: 1.8rem;
-            font-size: 1.2rem;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_reference {
-            font-family: 'Open Sans', sans-serif;
-            text-align: left;
-            font-size: 0.7em;
-            color: rgb(77, 79, 83);
-        }
-
-        .text_ack {
-            font-family: 'Open Sans', sans-serif;
-            text-align: center;
-            font-size: 0.7em;
-            color: rgb(140, 21, 21);
-        }
-
-        .teaser_grid {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 1fr;
-            justify-content: center;
-            grid-auto-flow: row;
-        }
-
-        .teaser_fig {
-            max-width: 99%;
-        }
-
-        .icons {
-            height: 3.5em;
-        }
-
-
-        .big_figure {
-            max-width: 100%;
-            display: block;
-            margin: 1em auto 1em;
-        }
-
-        .median_figure {
-            max-width: 75%;
-            display: block;
-            margin: 1em auto 1em;
-        }
-
-        .color_switch {
-            background-color: rgb(255, 255, 255);
-        }
-
-        .teaser_item {
-            text-align: center;
-        }
-
-        .table_title {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: rgb(77, 79, 83);
-            text-align: center;
-        }
-
-        .table_head {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: rgb(77, 79, 83);
-            text-align: center;
-        }
-
-        .table_elem {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            font-size: 1.0rem;
-            color: rgb(77, 79, 83);
-            text-align: center;
-            align-self: center;
-        }
-
-        .table_emph {
-            font-weight: 700;
-        }
-
-    </style>
-
-    <body>
+  <body>
     <section>
-    <div class="container">
-        <div class="row" id="title">
-            <p class="col text-center mt-4 text_title">
-                Robot Fine-Tuning Made Easy: Pre-Training Rewards and Policies for Autonomous Real-World Reinforcement Learning
+      <div class="relative items-center w-full px-5 pt-12 pb-2 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pt-24 lg:pb-4">
+        <div class="flex w-full mx-auto text-left">
+          <div class="relative inline-flex items-center mx-auto align-middle">
+            <div class="text-center">
+              <h1 class="max-w-5xl text-3xl font-bold leading-none tracking-tighter text-black-600 md:text-5xl lg:text-5xl lg:max-w-7xl">
+                <span class="grad_text">Robot Fine-Tuning Made Easy</span>: Pre-Training Rewards and Policies for Autonomous Real-World Reinforcement Learning
+              </h1>
+              <div class="space-y-2">
+                <p class="max-w-6xl mx-auto mt-8 text-md md:text-xl lg:text-xl lg:text-xl leading-relaxed text-gray-600 space-x-5">
+                  <a href="https://yjy0625.github.io/" class="hover:text-gray-800">Jingyun Yang*</a>
+                  <a href="https://profiles.stanford.edu/joel-sobol-mark/" class="hover:text-gray-800">Max Sobol Mark*</a>
+                  <a href="https://profiles.stanford.edu/240111/" class="hover:text-gray-800">Brandon Vu</a>
+                  <a href="https://architsharma97.github.io/" class="hover:text-gray-800">Archit Sharma</a>
+                  <a href="https://web.stanford.edu/~bohg/" class="hover:text-gray-800">Jeannette Bohg</a>
+                  <a href="https://ai.stanford.edu/~cbfinn/" class="hover:text-gray-800">Chelsea Finn</a>
+                </p>
+                <p class="max-w-6xl mx-auto mt-8 text-md md:text-xl lg:text-xl lg:text-xl leading-relaxed text-gray-400 space-x-7">
+                  <span>*Equal Contribution</span>
+                  <span>Stanford University</span>
+                </p>
+              </div>
+              <div class="flex items-center justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
+                <a href="https://arxiv.org/abs/2310.15145" class="inline-flex items-center text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-3 mr-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+                  <svg aria-hidden="true" class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                  </svg>
+                  <span>Paper</span>
+                </a>
+                <a href="https://youtu.be/BnFPav1viBA" class="inline-flex items-center text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-3 mr-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+                  <svg aria-hidden="true" class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                  </svg>
+                  <span>Video</span>
+                </a>
+                <a href="#" class="inline-flex items-center text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-3 mr-2 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+                  <svg aria-hidden="true" class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                  </svg>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center pt-6 mx-auto rounded-lg lg:px-10 max-w-7xl">
+          <div>
+            <img src="images/teaser.png" class="teaser_fig" class="object-cover object-center">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center px-5 pt-8 pb-6 my-6 mx-auto max-w-5xl sm:px-6 lg:px-8">
+        <div class="flex flex-col w-full max-w-5xl mx-auto border-l-4 p-12 rounded-r-xl bg-gray-50 prose text-left text-gray-800 leading-7">
+          <h2 class="text-2xl font-bold pb-5"><span>Abstract</span></h2>
+          <p>
+            The pre-train and fine-tune paradigm in machine learning has had dramatic success in a wide range of domains because the use of existing data or pre-trained models on the Internet enables quick and easy learning of new tasks. We aim to enable this paradigm in robotic reinforcement learning, allowing a robot to learn a new task with little human effort by leveraging data and models from the Internet. However, reinforcement learning often requires significant human effort in the form of manual reward specification or environment resets, even if the policy is pre-trained. We introduce RoboFuME, a reset-free fine-tuning system that pre-trains a multi-task manipulation policy from diverse datasets of prior experiences and self-improves online to learn a target task with minimal human intervention. Our insights are to utilize calibrated offline reinforcement learning techniques to ensure efficient online fine-tuning of a pre-trained policy in the presence of distribution shifts and leverage pre-trained vision language models (VLMs) to build a robust reward classifier for autonomously providing reward signals during the online fine-tuning process. In a diverse set of five real robot manipulation tasks, we show that our method can incorporate data from an existing robot dataset collected at a different institution and improve on a target task within as little as 3 hours of autonomous real-world experience. We also demonstrate in simulation experiments that our method outperforms prior works that use different RL algorithms or different approaches for predicting rewards.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center px-5 pt-6 pb-3 mx-auto max-w-6xl sm:px-6 lg:px-8">
+        <div class="flex flex-col w-full max-w-6xl mx-auto prose text-left text-gray-800">
+          <h2 class="text-2xl font-bold pb-5"><span class="grad_text">Video</span></h2>
+          <div>
+            <video height="auto" width="100%" controls="" style="border: 1px solid #000;">
+              <source src="./videos/robofume.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center px-5 pt-9 pb-3 mx-auto max-w-6xl sm:px-6 lg:px-8">
+        <div class="flex flex-col w-full max-w-6xl mx-auto prose text-left text-gray-800">
+          <h2 class="text-2xl font-bold pb-5"><span class="grad_text">Method Overview</span></h2>
+          <div>
+            <p>
+              We propose a system that enables autonomous and efficient real-world robot learning by first pre-training a VLM reward model and a multi-task policy from diverse off-the-shelf demonstration datasets and then fine-tuning the pre-trained policy online with the VLM reward model.
             </p>
+            <div class="flex flex-col items-center justify-center py-6 mx-auto lg:px-1 max-w-5xl">
+              <img src="images/teaser.png" class="object-cover object-center">
+            </div>
+          </div>
         </div>
-
-        <div class="row" id="venue">
-            <p class="col text-center text_venue">   
+      </div>
+      <div class="flex flex-col items-center px-5 pt-9 pb-3 mx-auto max-w-6xl sm:px-6 lg:px-8">
+        <div class="flex flex-col w-full max-w-6xl mx-auto prose text-left text-gray-800">
+          <h2 class="text-2xl font-bold pb-5"><span class="grad_text">Real Robot Experiments</span></h2>
+          <div>
+            <p>
+              We evaluate our agent on five manipulation tasks. Our method significantly improves over both offline-only and BC performance after 30k steps of online interaction (2-4 hours).
             </p>
-        </div>
-
-        
-        <div class="row" id="authors">
-            <div class="col-md-12 text-center mt-2 text_author">
-                <ul class="list-inline">
-                    <li class="list-inline-item mx-4">
-                        <a href=https://yjy0625.github.io/>
-                            <p>Jingyun Yang<sup>&#127794</sup>*</p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href=https://profiles.stanford.edu/joel-sobol-mark/>
-                            <p>Max Sobol Mark<sup>&#127794</sup>*</p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href=https://profiles.stanford.edu/240111/>
-                            <p>Brandon Vu<sup>&#127794</sup></p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href=ub.io/>
-                            <p>Archit Sharma<sup>&#127794</sup></p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href=https://web.stanford.edu/~bohg/>
-                            <p>Jeannette Bohg<sup>&#127794</sup></p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href=https://ai.stanford.edu/~cbfinn/>
-                            <p>Chelsea Finn<sup>&#127794</sup></p>
-                        </a>
-                    </li>
-                    <br>
-                    (*equal contribution)
-                </ul>
-                <ul class="list-inline" style="margin-top: 1rem">
-                    <li class="list-inline-item mx-4">
-                        <p><sup>&#127794</sup>Stanford University</p>
-                    </li>
-                </ul>
+            <div class="flex flex-col items-center justify-center py-6 mx-auto lg:px-1 max-w-4xl">
+              <img src="images/tasks.png" class="object-cover object-center">
             </div>
-        </div>
-        
-
-        <div class="row" id="resources">
-            <div class="col text-center text_resource">
-                <ul class="list-inline">
-                    <li class="list-inline-item mx-4">
-                        <a href="https://robofume.github.io">
-                            <img src="icons/paper_icon.png" class="icons">
-                            <p>Paper</p>
-                        </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                            <a href="https://robofume.github.io">
-                            <img src="icons/youtube_icon.png" class="icons">
-                                <p>Video</p>
-                            </a>
-                    </li>
-                    <li class="list-inline-item mx-4">
-                        <a href="">
-                            <img src="icons/github_icon.png" class="icons">
-                            <p>Code (to appear)</p>
-                        </a>
-                    </li>
-                    <li>
-                </ul>
+            <div class="flex flex-col items-center justify-center py-6 mx-auto lg:px-1 max-w-4xl">
+              <img src="images/real_robot_results.png" class="object-cover object-center">
             </div>
+          </div>
         </div>
-    </div>
-    </section>
-
-    <section class="color_switch">
-        <div class="container">
-        <div class="row" id="abstract">
-            <div class="col my-3">
-                <img src="images/teaser.png" class="teaser_fig">
-                <br><br>
-
-                <p class="text_header">
-                    Abstract
-                </p>
-
-                <p class="body_text">
-                    The pre-train and fine-tune paradigm in machine learning has had dramatic success in a wide range of domains because the use of existing data or pre-trained models on the Internet enables quick and easy learning of new tasks. We aim to enable this paradigm in robotic reinforcement learning, allowing a robot to learn a new task with little human effort by leveraging data and models from the Internet. However, reinforcement learning often requires significant human effort in the form of manual reward specification or environment resets, even if the policy is pre-trained. We introduce RoboFuME, a reset-free fine-tuning system that pre-trains a multi-task manipulation policy from diverse datasets of prior experiences and self-improves online to learn a target task with minimal human intervention. Our insights are to utilize calibrated offline reinforcement learning techniques to ensure efficient online fine-tuning of a pre-trained policy in the presence of distribution shifts and leverage pre-trained vision language models (VLMs) to build a robust reward classifier for autonomously providing reward signals during the online fine-tuning process. In a diverse set of five real robot manipulation tasks, we show that our method can incorporate data from an existing robot dataset collected at a different institution and improve on a target task within as little as 3 hours of autonomous real-world experience. We also demonstrate in simulation experiments that our method outperforms prior works that use different RL algorithms or different approaches for predicting rewards.
-                </p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-        <div class="row">
-            <div class="col my-3">
-                <p class="text_header">
-                    Video
-                </p>
-                <div class="text-center mb-4">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://www.youtube.com/embed/BnFPav1viBA?si=TTpjCk-XvOGJhixU" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="color_switch">
-        <div class="container">
-        <div class="row" id="abstract">
-            <div class="col my-3">
-                <p class="text_header">
-                    Method Overview
-                </p>
-                
-                <p class="body_text">
-                    We propose a system that enables autonomous and efficient real-world robot learning by first pre-training a VLM reward model and a multi-task policy from diverse off-the-shelf demonstration datasets and then fine-tuning the pre-trained policy online with the VLM reward model.
-                </p>
-                <img src="images/teaser.png" class="teaser_fig">
-                <br><br>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="color_switch">
-        <div class="container">
-        <div class="row" id="abstract">
-            <div class="col my-3">
-                <p class="text_header">
-                    Real Robot Experiments
-                </p>
-                
-                <p class="body_text">
-                    We evaluate our agent on five manipulation tasks. Our method significantly improves over both offline-only and BC performance after 30k steps of online interaction (2-4 hours).
-                </p>
-                <img src="images/tasks.png" class="teaser_fig">
-                <img src="images/real_robot_results.png" class="teaser_fig">
-                <br><br>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="color_switch">
-        <div class="container">
-        <div class="row" id="abstract">
-            <div class="col my-3">
-                <p class="text_header">
-                    Simulation Experiment Results
-                </p>
-                
-                <p class="body_text">
-                    We use a suite of three simulated robotic manipulation environments to ablate contributions of different components of our algorithm. We report the success rate over the course of training, averaged over three seeds. Our method RoboFuME outperforms BC, ARIEL+VLM, and MEDAL++ consistently on all three domains.
-                </p>
-                <img src="images/sim_envs.gif" class="teaser_fig">
-                <img src="images/sim_results.png" class="teaser_fig">
-                <br><br>
-            </div>
-        </div>
-        </div>
-    </section>
-
-        <div class="row" id="ack" style="margin-top: 1rem">
-            <p class="col text_ack my-3">
-                If you have any questions, please contact Jingyun Yang (jingyuny@stanford.edu).
+      </div>
+      <div class="flex flex-col items-center px-5 pt-9 pb-3 mx-auto max-w-6xl sm:px-6 lg:px-8">
+        <div class="flex flex-col w-full max-w-6xl mx-auto prose text-left text-gray-800">
+          <h2 class="text-2xl font-bold pb-5"><span class="grad_text">Simulation Experiments</span></h2>
+          <div>
+            <p>
+              We use a suite of three simulated robotic manipulation environments to ablate contributions of different components of our algorithm. We report the success rate over the course of training, averaged over three seeds. Our method RoboFuME outperforms BC, ARIEL+VLM, and MEDAL++ consistently on all three domains.
             </p>
+            <div class="flex flex-col items-center justify-center py-6 mx-auto lg:px-1 max-w-4xl">
+              <img src="images/sim_envs.gif" class="object-cover object-center">
+            </div>
+            <div class="flex flex-col items-center justify-center py-6 mx-auto lg:px-1 max-w-4xl">
+              <img src="images/sim_results.png" class="object-cover object-center">
+            </div>
+          </div>
         </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    </body>
+      </div>
+    </section>
+    <footer class="bg-white mt-4" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="px-4 py-8 mx-auto bg-gray-50 w-full sm:px-6 lg:px-16">
+        <div class="flex flex-wrap items-baseline lg:justify-center">
+          <span class="text-sm text-center font-light text-gray-600">
+            If you have any questions, please contact Jingyun Yang and Max Sobol Mark ({jingyuny, maxsobolmark} "at" stanford "dot" edu).
+            <br/>
+            Toyota Research Institute provided funds to support this work.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
